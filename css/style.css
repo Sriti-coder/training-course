@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
 /* common css */
-.sl-img{
-
-}
 .mb{
     margin-bottom: 150px;
 }
@@ -32,6 +29,9 @@ p{
 	color:    #fff !important;
 }
 /*................. header-section............ */
+.navbar{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
 .navbar-brand{
     font-family: 'Courgette', cursive;
 }
@@ -42,8 +42,11 @@ p{
 	color: #0D6EFD;
 }
 /*....... slider-area........... */
-.carousel-caption.d-none.d-md-block {
-	top: 35% !important;
+.slider-area {
+	margin-bottom: 100px;
+}
+.carousel-caption {
+	top: 45% !important;
 }
 .slide-img::before{
     position:absolute;
@@ -68,20 +71,44 @@ p{
 .explore-detail {
 	padding: 110px 0;
 }
-
+.course-body:hover{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
 /* .......explore-section.......... */
 .explore-img img {
 	width: 100%;
+}
+.explore-img {
+	transition: transform .5s ease;
+}
+.explore-img:hover {
+	transform: scale(1.1);
+}
+.explore-count{
+    display: flex;
 }
 /* .....student-sectio........ */
 .student-img img {
 	width: 100%;
 }
+.student-img  {
+    transition: transform .5s ease;
+}
+.student-img:hover{
+    transform: scale(1.1);
+  }
+
 /* brand-section */
 .brand-img img {
 	width: 70%;
 }
 /* feedback-section */
+.feedbace-section{
+    margin-bottom: 100px;
+}
+.text {
+	margin-bottom: 60px;
+}
 .feedback-img {
 	margin-left: -90px;
 	margin-bottom: 15px;
@@ -113,7 +140,13 @@ p{
 .feedback-img img {
 	width: 65%;
 }
+.student-btn.text-center {
+	display: none;
+}
 /* footer */
+.logo{
+    font-family: 'Courgette', cursive;
+}
 .last-area{
 	padding: 55px 0;
 }
@@ -126,49 +159,6 @@ p{
 	text-align: center;
 	border-radius: 50%;
 }
-/* ........................responsive....................... */
-/* XL Device :1200px. */
-@media (min-width: 1200px) and (max-width: 1449px) {
-
+.icon i:hover{
+    cursor: pointer;
 }
-
-/* LG Device :992px. */
-@media (min-width: 992px) and (max-width: 1200px) {
-
-
-}
-
- 
-/* MD Device :768px. */
-@media (min-width: 768px) and (max-width: 991px) {
-
-}
- 
-
-/* SM Small Device :320px. */
-@media only screen and (min-width: 320px) and (max-width: 767px) {
-    .mb{
-        margin-bottom: 60px;
-    }
-    .d-flex {
-        display: block !important;
-    }
-    .course-img img {
-        width: 100%;
-    }
-    .bg-info {
-        padding: 10px 0;
-    }
-    .student-title {
-        text-align: center;
-    }
-    .course-details {
-        margin-top: 20px;
-    }
-    .explore-detail {
-        padding: 35px 0;
-    }
-}
-
-
-
