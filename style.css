@@ -12,7 +12,12 @@
 p{
     color: #777777;
 }
-
+.pr-30{
+    padding-right: 30px;
+}
+.bg-info{
+    background-color: #289BDE !important;
+}
 /* header-section */
 .navbar-brand{
     font-family: 'Courgette', cursive;
@@ -24,42 +29,30 @@ p{
 	color: #0D6EFD;
 }
 /* slider-area */
-/* .carousel-item img{
-    background-color: rgba(0, 0, 0, 0.5);
-    background-blend-mode: darken,luminosity;
-} */
 .carousel-caption.d-none.d-md-block {
-	top: 50% !important;
+	top: 35% !important;
 }
-/* .slider::before{
+.carousel-item::before{
     position:absolute;
     top: 0;
     left: 0;
     content: "";
-    background-color: #8c8e91;
-    height: 100vh;
+    background-color: #222;
+    height: 100%;
     width: 100%;
     opacity: 0.6;
-    
-    } */
-    .carousel-inner{
-        position: relative;
-    }
-    .carousel-inner:before {
-        position:absolute;
-        top: 0;
-        left: 0;
-        content: "";
-        height: 100vh;
-        width: 100%;
-        z-index: 999;
-        background-color: rgba(0, 0, 0, 0.5);
-        background-blend-mode: darken,luminosity;
-    }
+}
 /* course-section */
 .course-details{
     margin-left:30px;
 }
+.img-thumbnail {
+	border: none !important;
+}
+.explore-detail {
+	padding: 110px 0;
+}
+
 /* explore-section */
 .explore-img img {
 	width: 100%;
